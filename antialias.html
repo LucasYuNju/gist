@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="anti-alias" />
+    <script>
+        const canvas = document.getElementById('anti-alias');
+        const ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(80, 50);
+        ctx.lineTo(100, 50);
+        ctx.lineTo(50, 100);
+        ctx.closePath();
+        ctx.fillStyle = '#0000ff';
+        ctx.strokeStyle = '#0000ff';
+        ctx.strokeWidth = 2;
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>
